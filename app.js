@@ -7,6 +7,7 @@ class Producto{
         this.precio = Number(precio);
     }
     sumaTarjeta(){return this.precio *= 1.21}
+  
 }
 
 
@@ -23,7 +24,8 @@ for (let i = 0; i < 1 ;i++) {
      console.log("Productos elegidos:"+articuloElegido)
 
      for (const info of articuloElegido) {
-        console.log("Informacion del articulo" + info.articulo + info.talle +info.color +info.largo + info.precio)
+        console.log("Informacion del articulo" + " " + info.articulo + " " + info.talle + " " +info.color +" " + info.largo + " " +info.precio)
         console.log(info.sumaTarjeta())
+        
        }
 }
